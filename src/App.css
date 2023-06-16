@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+.container{
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 10px 15px;
+}
+.text-left{
+  text-align: left;
+}
+.flex{
+  display: flex;
+}
+.place-center{
+  place-items: center;
+}
+.select-file input{
+opacity: 0;
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+bottom: 0;
+left: 0;
+}
+.select-file {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  position: relative;
+  text-align: center;
+  min-height: 32px;
+  padding: 4px 0px 0px 0px;
+  cursor: pointer;
+  width: 80px;
+}
+.filter-input input{
+  width: 180px;
+}
+.filter-input input{
+  height: 37px;
+  padding: 0px 30px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 5px;
+}
+.filter-input svg{
+  margin-right: 10px;
+  width: 16px;
+}
+.table-data th{
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e1d1d;
+  background: #e5e5e5;
+}
+.table-data th button{
+display: none;
+}
+.title{
+  font-size: 20px;
+  color: #585454;
+}
+.all-btn-box{
+  /* max-width: 484px;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  box-shadow: -1px -1px 4px 0px #ddd;
+  border-radius: 10px;
+  margin: 10px 0px; */
+}
+.flex.place-center.import-file,.filter-input .flex{
+  flex-wrap: wrap;
+}
+.table-data .MuiToolbar-root.MuiToolbar-gutters:nth-child(1){
+  display: none;
+}
+.table-data .MuiToolbar-root.MuiToolbar-gutters.MuiToolbar-regular.MuiTablePagination-toolbar{
+  display: flex;
+}
+.input-feild{
+  position: relative;
+}
+.input-feild svg{
+position: absolute;
+left:10px;
+top:5px;
+}
+.tableDataEdit ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.tableDataEdit ul li{
+  padding: 0px 5px;
+  border: 1px solid;
+  width: 120px;
+}
+.tableDataEdit ul li input{
+  width:100%;
+  border: none;
+}
+.tableDataEdit ul li input:focus{
+  outline: none;
+}
+.tableDataEdit .custom-header li{
+  background-color: #c5c5c5;
+  padding: 5px 5px;
+}
+.tableDataEdit li span{
+  word-break: break-word;
+}
+.MuiDialog-container .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded{
+max-width: 700px;
+}
+.tableDataEdit{
+  padding: 30px 0;
+}
+.all-btn-box{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.blank-table-box{
+  margin-top: 29px;
+  min-height: 385px;
+  border: 1px solid #bebebf;
+  display: flex;
+  border-radius: 10px;
+  place-items: center;
+  justify-content: center;
+}
+.blank-table-box p{
+  font-size: 22px;
+  font-weight: 500;
+}
+.table-data table thead th{
+  text-transform: uppercase;
+}
+/* ***********padding css************ */
+.p-20{
+  padding:20px 0;
+}
+::-webkit-scrollbar-track{
+  width: 4px;
+  height: 4px;
+  background-color: #d1d1d1;
+}
+::-webkit-scrollbar-thumb{
+  width: 4px;
+  height: 4px;
+  background-color: #6f6f6f;
+}
+::-webkit-scrollbar{
+  width: 4px;
+  height: 4px;
+}
+.delete-btn-popup{
+  position: absolute;
+  background: #fff;
+  z-index: 999;
+  padding: 11px 11px;
+  border: 1px solid #c7c1c1dd;
+  box-shadow: -6px 8px 14px #ddd;
+  right: 0;
+  max-width: 152px;
+  min-width: 152px;
+  border-radius: 12px;
+  top: 59px;
+}
+.delete-btn-popup button{
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.custom-arrow{
+  width: 10px;
+  position: relative;
+  transform: rotate(45deg);
+  height: 10px;
+  background: white;
+  top: -18px;
+  border-left: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  margin: 0 auto;
+}
+.table-data{
+  margin-top:15px;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+@media (max-width:767px) {
+  .flex.place-center.import-file button,.filter-input .flex button,.select-file{
+  margin-top: 10px;
+  }
+}
+.table-data tbody tr  td:last-child{
+  overflow: visible;
+}
